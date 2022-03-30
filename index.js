@@ -27,7 +27,7 @@ const comments = [
 ];
 
 app.get('/comments', (req, res) => {
-  res.render('comments/index')
+  res.render('comments/index', { comments })
 });
 
 app.get('/tacos', (req, res) => {
@@ -36,7 +36,7 @@ app.get('/tacos', (req, res) => {
 
 app.post('/tacos', (req, res) => {
   const { meat, qty } = req.body;
-  res.send(`OK, here are your ${qty} ${meat} tacos`);
+  res.send(`OK, here are your ${qty} ${meat} tacos`)
 });
 
 app.listen(3000, () => {
