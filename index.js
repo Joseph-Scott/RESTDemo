@@ -31,7 +31,7 @@ app.get('/comments', (req, res) => {
 });
 
 app.get('/tacos', (req, res) => {
-  res.send("GET /tacos response");
+  res.send("GET /tacos response")
 });
 
 app.post('/tacos', (req, res) => {
