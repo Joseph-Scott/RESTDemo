@@ -32,7 +32,11 @@ app.get('/comments', (req, res) => {
 
 app.get('/comments/new', (req, res) => {
   res.render('comments/new');
-})
+});
+
+app.post('/comments', (req, res) => {
+  res.render('comments')
+});
 
 app.get('/tacos', (req, res) => {
   res.send("GET /tacos response")
