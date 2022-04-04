@@ -35,7 +35,9 @@ app.get('/comments/new', (req, res) => {
 });
 
 app.post('/comments', (req, res) => {
-  res.render('comments')
+  const {username, comment} = req.body;
+  comments.push({ username, comment });
+  res.send("IT WORKED!");
 });
 
 app.get('/tacos', (req, res) => {
