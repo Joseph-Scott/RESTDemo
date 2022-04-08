@@ -33,7 +33,7 @@ let comments = [
 ];
 
 app.get('/comments', (req, res) => {
-  res.render('comments/index', { comments })
+  res.render('comments/index', { comments });
 });
 
 app.get('/comments/new', (req, res) => {
